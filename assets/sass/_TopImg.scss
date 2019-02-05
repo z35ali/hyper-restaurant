@@ -1,0 +1,50 @@
+.TopImg {
+  position: relative;
+  background: black;
+  height: 500px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #000 100%);
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #000 100%),
+    url('https://www.thespruceeats.com/thmb/p94FojzWyel4O2i479cQfNheMxk=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/prime-rib-roast-184974636-59dbe0fcd088c00010284750.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-right: 200px;
+
+  .title {
+    padding: 200px 0 80px;
+    text-align: right;
+    h1 {
+      font-family: $displayFont;
+      text-transform: lowercase;
+      color: white;
+      font-weight: 300;
+      font-size: 4rem;
+    }
+    h5 {
+      text-transform: uppercase;
+      color: white;
+      font-weight: 300;
+    }
+  }
+
+  .contact-info {
+    color: white;
+
+    text-align: right;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+
+    h2 {
+      font-size: 2rem;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .booking {
+      margin-bottom: 10px;
+    }
+  }
+}
