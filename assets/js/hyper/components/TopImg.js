@@ -12,7 +12,7 @@ export default function TopImg({ state, actions }) {
         <h2>(642)-555-5555</h2>
         <div class='hours'>
           Opening Hours <strong>Mon - Fri:</strong> 9am - 9pm
-          <strong>Weekend:</strong> 9am - 11pm
+          <strong> Weekend:</strong> 9am - 11pm
         </div>
       </div>
     </section>

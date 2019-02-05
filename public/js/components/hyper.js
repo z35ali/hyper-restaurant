@@ -197,7 +197,7 @@ function TopImg(_ref) {
         (0, _hyperapp.h)(
           'strong',
           null,
-          'Weekend:'
+          ' Weekend:'
         ),
         ' 9am - 11pm'
       )
