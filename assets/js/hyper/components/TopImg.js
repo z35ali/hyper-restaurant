@@ -2,7 +2,7 @@ import { h, app } from 'hyperapp';
 
 export default function TopImg({ state, actions }) {
   return (
-    <section class='TopImg'>
+    <section id='TopImg'>
       <div class='container'>
         <div class='title'>
           <h5>Welcome</h5>

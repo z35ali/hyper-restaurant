@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans:400,700|Rozha+One');
-@import 'variables';
 @import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Rozha+One');
+
+@import 'variables';
+
 @import 'grid';
 @import 'Header';
 @import 'TopImg';
+@import 'OurStory';
 
 body {
   font-family: $textFont;
