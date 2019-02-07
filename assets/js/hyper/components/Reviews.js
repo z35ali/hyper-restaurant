@@ -19,7 +19,7 @@ export default function Reviews({ state, actions }) {
               food. The food was flavourful and the service was top notch
             </p>
             <div class='author'>
-              <strong>Joe Bastiachi -</strong> <em>Winner of Master Chef</em>
+              <strong>Lisa Bastiachi -</strong> <em>Winner of Master Chef</em>
             </div>
             <div class='arrows'>
               <i class='fa fa-arrow-left' aria-hidden='true' />

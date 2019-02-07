@@ -10,43 +10,37 @@ export default function SpecialMenu({ state, actions }) {
         <div class='row boxes'>
           <div class='col-md-4'>
             <div class='box'>
-              <div class='box-img'>
+              <div class='box-img1'>
                 {' '}
-                <div class='price-circle'>$25</div>{' '}
+                <div class='price-circle'>$28</div>{' '}
               </div>
 
               <span class='title'>Super BBQ Grill No Smoke</span>
-              <p class='details'>
-                Fried eggs, Steak, Potatoes, or French Fries, side of vegetables
-              </p>
+              <p class='details'>Mashed potatoes, side of vegetables</p>
             </div>
           </div>
 
           <div class='col-md-4'>
             <div class='box'>
-              <div class='box-img'>
+              <div class='box-img2'>
                 {' '}
-                <div class='price-circle'>$25</div>{' '}
+                <div class='price-circle'>$32</div>{' '}
               </div>
 
-              <span class='title'>Super BBQ Grill No Smoke</span>
-              <p class='details'>
-                Fried eggs, Steak, Potatoes, or French Fries, side of vegetables
-              </p>
+              <span class='title'>Sirloin Steak</span>
+              <p class='details'>French Fries, side of potatoes</p>
             </div>
           </div>
 
           <div class='col-md-4'>
             <div class='box'>
-              <div class='box-img'>
+              <div class='box-img3'>
                 {' '}
-                <div class='price-circle'>$25</div>{' '}
+                <div class='price-circle'>$20</div>{' '}
               </div>
 
-              <span class='title'>Super BBQ Grill No Smoke</span>
-              <p class='details'>
-                Fried eggs, Steak, Potatoes, or French Fries, side of vegetables
-              </p>
+              <span class='title'>Burgers</span>
+              <p class='details'>French Fries, side of vegetables</p>
             </div>
           </div>
         </div>

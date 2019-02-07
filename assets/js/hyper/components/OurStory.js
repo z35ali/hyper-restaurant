@@ -16,8 +16,8 @@ export default function OurStory({ state, actions }) {
               that you want and we will put the tastiest meal on your plate.
             </p>
             <div class='quote'>
-              "The best steak in the town of Huntington" -{' '}
-              <strong>James Peterson</strong>
+              "The best steak in the city of Toronto" -{' '}
+              <strong>Jennifer Peterson</strong>
             </div>
             <a href='#' class='reserve-btn'>
               Reserve

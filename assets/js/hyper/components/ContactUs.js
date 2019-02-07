@@ -10,7 +10,10 @@ export default function ContactUs({ state, actions }) {
         <div class='box'>
           <div class='row'>
             <div class='col-md-6'>
-              <div class='title'>Toronto, Ontario</div>
+              <div class='title'>
+                <br />
+                Toronto, Ontario
+              </div>
               <h6 class='Address'>
                 555 Toronto Street <br />
                 Toronto, ON M5B 555
@@ -22,7 +25,7 @@ export default function ContactUs({ state, actions }) {
               </p>
             </div>
 
-            <div class='col-md-6'>
+            <div class='col-md-6 service'>
               <h6>Phone:</h6>
               <div class='title'>416-555-5555</div>
               <h6>Lunch Service:</h6>
