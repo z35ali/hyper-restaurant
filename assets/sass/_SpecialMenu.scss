@@ -1,49 +1,75 @@
-#TopImg {
-  position: relative;
-  background: black;
-  height: 500px;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #000 100%);
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #000 100%),
-    url('https://stoneypointfarmmarket.com/wp-content/uploads/2015/12/Prime-rib-GettyImages-183385067-5877cd7a5f9b584db35a7625.jpg');
+#SpecialMenu {
+  padding: 75px 0;
+  //background-image: url('https://image.freepik.com/free-vector/white-canvas-background_1053-239.jpg');
   background-position: center;
-  background-size: cover;
+  //background-size: cover;
+  background-repeat: repeat;
 
-  .title {
-    padding: 200px 0 80px;
-    text-align: right;
-    h1 {
-      font-family: $displayFont;
-      text-transform: lowercase;
-      color: white;
-      font-weight: 300;
-      font-size: 4rem;
+  h5 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .box {
+    background: #fff;
+    padding: 20px;
+
+    .box-img {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #000 100%);
+      background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #000 100%),
+        url('https://cdn.pixabay.com/photo/2014/11/03/23/33/food-516044_1280.jpg');
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      margin-bottom: 75px;
     }
-    h5 {
-      text-transform: uppercase;
-      color: white;
+    .price-circle {
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 0;
+      margin: 0 auto;
+      font-family: $displayFont;
+      font-size: 2.7rem;
+      background: white;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.41);
+    }
+
+    .title {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .details {
       font-weight: 300;
+      font-size: 0.8rem;
+      text-align: center;
+      line-height: 2;
+      margin: 0;
     }
   }
 
-  .contact-info {
-    color: white;
-
-    text-align: right;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-
-    h2 {
-      font-size: 2rem;
-      color: white;
-      margin-bottom: 20px;
-    }
-
-    strong {
-      font-weight: bold;
-    }
-
-    .booking {
-      margin-bottom: 10px;
-    }
+  .boxes {
+    padding-bottom: 50px;
+    text-align: center;
+    display: block;
+  }
+  a.link {
+    color: black;
+    font-family: $displayFont;
   }
 }

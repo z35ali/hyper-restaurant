@@ -44,7 +44,7 @@ var _Header = __webpack_require__(4);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TopImg = __webpack_require__(7);
+var _TopImg = __webpack_require__(8);
 
 var _TopImg2 = _interopRequireDefault(_TopImg);
 
@@ -52,9 +52,13 @@ var _OurStory = __webpack_require__(5);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
-var _SpecialMenu = __webpack_require__(6);
+var _SpecialMenu = __webpack_require__(7);
 
 var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
+
+var _RandomQuote = __webpack_require__(6);
+
+var _RandomQuote2 = _interopRequireDefault(_RandomQuote);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68,7 +72,8 @@ function App(_ref) {
     (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_TopImg2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -232,6 +237,49 @@ function OurStory(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = RandomQuote;
+
+var _hyperapp = __webpack_require__(0);
+
+function RandomQuote(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    'section',
+    {
+      id: 'RandomQuote',
+      style: {
+        backgroundImage: 'linear-gradient(135deg, rgba(0,0,0,.2)0, #000 100%),url("http://www.colonelsretreat.com/system/special_slider/cooking.png")'
+      }
+    },
+    (0, _hyperapp.h)(
+      'div',
+      { 'class': 'container' },
+      (0, _hyperapp.h)(
+        'h1',
+        null,
+        '"Good painting is like good cooking; it can only be tasted but not explained"'
+      ),
+      (0, _hyperapp.h)(
+        'span',
+        { 'class': 'author' },
+        'Billy -'
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.default = SpecialMenu;
 
 var _hyperapp = __webpack_require__(0);
@@ -242,14 +290,14 @@ function SpecialMenu(_ref) {
 
   return (0, _hyperapp.h)(
     'section',
-    { id: 'SpecialMenu' },
+    { id: 'SpecialMenu', 'class': 'texturebg' },
     (0, _hyperapp.h)(
       'div',
       { 'class': 'container' },
       (0, _hyperapp.h)(
         'h5',
         { 'class': 'comp-title' },
-        'SpecialMenu'
+        'Special Menu'
       ),
       (0, _hyperapp.h)(
         'h2',
@@ -258,26 +306,98 @@ function SpecialMenu(_ref) {
       ),
       (0, _hyperapp.h)(
         'div',
-        { 'class': 'row' },
+        { 'class': 'row boxes' },
         (0, _hyperapp.h)(
           'div',
           { 'class': 'col-md-4' },
-          'Box'
+          (0, _hyperapp.h)(
+            'div',
+            { 'class': 'box' },
+            (0, _hyperapp.h)(
+              'div',
+              { 'class': 'box-img' },
+              ' ',
+              (0, _hyperapp.h)(
+                'div',
+                { 'class': 'price-circle' },
+                '$25'
+              ),
+              ' '
+            ),
+            (0, _hyperapp.h)(
+              'span',
+              { 'class': 'title' },
+              'Super BBQ Grill No Smoke'
+            ),
+            (0, _hyperapp.h)(
+              'p',
+              { 'class': 'details' },
+              'Fried eggs, Steak, Potatoes, or French Fries, side of vegetables'
+            )
+          )
         ),
         (0, _hyperapp.h)(
           'div',
           { 'class': 'col-md-4' },
-          'Box'
+          (0, _hyperapp.h)(
+            'div',
+            { 'class': 'box' },
+            (0, _hyperapp.h)(
+              'div',
+              { 'class': 'box-img' },
+              ' ',
+              (0, _hyperapp.h)(
+                'div',
+                { 'class': 'price-circle' },
+                '$25'
+              ),
+              ' '
+            ),
+            (0, _hyperapp.h)(
+              'span',
+              { 'class': 'title' },
+              'Super BBQ Grill No Smoke'
+            ),
+            (0, _hyperapp.h)(
+              'p',
+              { 'class': 'details' },
+              'Fried eggs, Steak, Potatoes, or French Fries, side of vegetables'
+            )
+          )
         ),
         (0, _hyperapp.h)(
           'div',
           { 'class': 'col-md-4' },
-          'Box'
+          (0, _hyperapp.h)(
+            'div',
+            { 'class': 'box' },
+            (0, _hyperapp.h)(
+              'div',
+              { 'class': 'box-img' },
+              ' ',
+              (0, _hyperapp.h)(
+                'div',
+                { 'class': 'price-circle' },
+                '$25'
+              ),
+              ' '
+            ),
+            (0, _hyperapp.h)(
+              'span',
+              { 'class': 'title' },
+              'Super BBQ Grill No Smoke'
+            ),
+            (0, _hyperapp.h)(
+              'p',
+              { 'class': 'details' },
+              'Fried eggs, Steak, Potatoes, or French Fries, side of vegetables'
+            )
+          )
         )
       ),
       (0, _hyperapp.h)(
         'a',
-        { href: '#' },
+        { href: '#', 'class': 'link' },
         'View Full Menu'
       )
     )
@@ -285,7 +405,7 @@ function SpecialMenu(_ref) {
 }
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -319,7 +439,9 @@ function TopImg(_ref) {
         (0, _hyperapp.h)(
           'h1',
           null,
-          'Prime Steak'
+          'Prime Steak ',
+          (0, _hyperapp.h)('br', null),
+          'Restaurant'
         )
       ),
       (0, _hyperapp.h)(
@@ -327,30 +449,34 @@ function TopImg(_ref) {
         { 'class': 'contact-info' },
         (0, _hyperapp.h)(
           'div',
-          { 'class': 'booking' },
-          'Book Table Directly'
-        ),
-        (0, _hyperapp.h)(
-          'h2',
-          null,
-          '(642)-555-5555'
-        ),
-        (0, _hyperapp.h)(
-          'div',
-          { 'class': 'hours' },
-          'Opening Hours ',
+          { 'class': 'container' },
           (0, _hyperapp.h)(
-            'strong',
-            null,
-            'Mon - Fri:'
+            'div',
+            { 'class': 'booking' },
+            'Book Table Directly'
           ),
-          ' 9am - 9pm',
           (0, _hyperapp.h)(
-            'strong',
+            'h2',
             null,
-            ' Weekend:'
+            '(642)-555-5555'
           ),
-          ' 9am - 11pm'
+          (0, _hyperapp.h)(
+            'div',
+            { 'class': 'hours' },
+            'Opening Hours ',
+            (0, _hyperapp.h)(
+              'strong',
+              null,
+              'Mon - Fri:'
+            ),
+            ' 9am - 9pm',
+            (0, _hyperapp.h)(
+              'strong',
+              null,
+              ' Weekend:'
+            ),
+            ' 9am - 11pm'
+          )
         )
       )
     )
@@ -358,7 +484,7 @@ function TopImg(_ref) {
 }
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -400,4 +526,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[8]);
+],[9]);

@@ -1,23 +1,27 @@
 #TopImg {
   position: relative;
   background: black;
-  height: 500px;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #000 100%);
+  min-height: 500px;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #002d77 100%);
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0, #000 100%),
-    url('https://stoneypointfarmmarket.com/wp-content/uploads/2015/12/Prime-rib-GettyImages-183385067-5877cd7a5f9b584db35a7625.jpg');
+    url('https://samuivillaretreat.com/blog/wp-content/uploads/2017/06/Best-Steak-Restaurants-in-Koh-Samui.jpg');
   background-position: center;
   background-size: cover;
+  position: relative;
 
   .title {
     padding: 200px 0 80px;
     text-align: right;
+
     h1 {
       font-family: $displayFont;
-      text-transform: lowercase;
+      text-transform: uppercase;
       color: white;
       font-weight: 300;
-      font-size: 4rem;
+      font-size: 6rem;
     }
+
     h5 {
       text-transform: uppercase;
       color: white;
@@ -26,7 +30,11 @@
   }
 
   .contact-info {
-    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    color: $paragraphColor;
 
     text-align: right;
     font-size: 0.8rem;
@@ -40,10 +48,12 @@
 
     strong {
       font-weight: bold;
+      color: white;
     }
 
     .booking {
       margin-bottom: 10px;
+      color: $paragraphColor;
     }
   }
 }

@@ -1,11 +1,11 @@
 #OurStory {
-  padding: 200px 0;
+  padding: 100px 0;
 
   .quote {
-    color: grey;
+    color: $paragraphColor;
     margin-bottom: 3rem;
     strong {
-      color: black;
+      color: $black;
       font-weight: 700;
     }
   }
@@ -13,14 +13,14 @@
   .reserve-btn {
     font-family: $displayFont;
     padding: 20px 40px;
-    border: 1px solid black;
+    border: 1px solid $black;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: $black;
     text-transform: uppercase;
     transition: all 0.5s ease-in-out;
     &:hover {
-      background: orange;
+      background: $red;
       color: white;
     }
   }
