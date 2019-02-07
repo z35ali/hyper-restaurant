@@ -4,55 +4,41 @@ export default function ContactUs({ state, actions }) {
   return (
     <section id='ContactUs' class='texturebg'>
       <div class='container'>
-        <h5 class='comp-title'>Special Menu</h5>
+        <h5 class='comp-title'>Contact Us</h5>
         <h2>Delicious Flavour of Autumn</h2>
 
-        <div class='row boxes'>
-          <div class='col-md-4'>
-            <div class='box'>
-              <div class='box-img'>
-                {' '}
-                <div class='price-circle'>$25</div>{' '}
-              </div>
+        <div class='box'>
+          <div class='row'>
+            <div class='col-md-6'>
+              <div class='title'>Toronto, Ontario</div>
+              <h6 class='Address'>
+                555 Toronto Street <br />
+                Toronto, ON M5B 555
+              </h6>
 
-              <span class='title'>Super BBQ Grill No Smoke</span>
-              <p class='details'>
-                Fried eggs, Steak, Potatoes, or French Fries, side of vegetables
+              <p>
+                <strong>email:</strong>{' '}
+                <a href='mailto:info@primesteak.com'>info@primesteak.com</a>
               </p>
             </div>
-          </div>
 
-          <div class='col-md-4'>
-            <div class='box'>
-              <div class='box-img'>
-                {' '}
-                <div class='price-circle'>$25</div>{' '}
-              </div>
-
-              <span class='title'>Super BBQ Grill No Smoke</span>
-              <p class='details'>
-                Fried eggs, Steak, Potatoes, or French Fries, side of vegetables
+            <div class='col-md-6'>
+              <h6>Phone:</h6>
+              <div class='title'>416-555-5555</div>
+              <h6>Lunch Service:</h6>
+              <p>
+                Friday, Saturday, Sunday <br />
+                from 12pm - 1:30pm
               </p>
-            </div>
-          </div>
+              <h6>Dinner Service:</h6>
 
-          <div class='col-md-4'>
-            <div class='box'>
-              <div class='box-img'>
-                {' '}
-                <div class='price-circle'>$25</div>{' '}
-              </div>
-
-              <span class='title'>Super BBQ Grill No Smoke</span>
-              <p class='details'>
-                Fried eggs, Steak, Potatoes, or French Fries, side of vegetables
+              <p>
+                Daily <br />
+                6pm - 9:30pm
               </p>
             </div>
           </div>
         </div>
-        <a href='#' class='link'>
-          View Full Menu
-        </a>
       </div>
     </section>
   );

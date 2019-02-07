@@ -16,6 +16,8 @@ export default function App({ state, actions }) {
       <SpecialMenu state={state} actions={actions} />
       <RandomQuote state={state} actions={actions} />
       <Reviews state={state} actions={actions} />
+
+      <ContactUs state={state} actions={actions} />
     </div>
   );
 }

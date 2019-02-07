@@ -82,7 +82,8 @@ function App(_ref) {
     (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_Reviews2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_Reviews2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_ContactUs2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -129,7 +130,7 @@ function ContactUs(_ref) {
       (0, _hyperapp.h)(
         'h5',
         { 'class': 'comp-title' },
-        'Special Menu'
+        'Contact Us'
       ),
       (0, _hyperapp.h)(
         'h2',
@@ -138,99 +139,80 @@ function ContactUs(_ref) {
       ),
       (0, _hyperapp.h)(
         'div',
-        { 'class': 'row boxes' },
+        { 'class': 'box' },
         (0, _hyperapp.h)(
           'div',
-          { 'class': 'col-md-4' },
+          { 'class': 'row' },
           (0, _hyperapp.h)(
             'div',
-            { 'class': 'box' },
+            { 'class': 'col-md-6' },
             (0, _hyperapp.h)(
               'div',
-              { 'class': 'box-img' },
-              ' ',
-              (0, _hyperapp.h)(
-                'div',
-                { 'class': 'price-circle' },
-                '$25'
-              ),
-              ' '
+              { 'class': 'title' },
+              'Toronto, Ontario'
             ),
             (0, _hyperapp.h)(
-              'span',
-              { 'class': 'title' },
-              'Super BBQ Grill No Smoke'
+              'h6',
+              { 'class': 'Address' },
+              '555 Toronto Street ',
+              (0, _hyperapp.h)('br', null),
+              'Toronto, ON M5B 555'
             ),
             (0, _hyperapp.h)(
               'p',
-              { 'class': 'details' },
-              'Fried eggs, Steak, Potatoes, or French Fries, side of vegetables'
+              null,
+              (0, _hyperapp.h)(
+                'strong',
+                null,
+                'email:'
+              ),
+              ' ',
+              (0, _hyperapp.h)(
+                'a',
+                { href: 'mailto:info@primesteak.com' },
+                'info@primesteak.com'
+              )
             )
-          )
-        ),
-        (0, _hyperapp.h)(
-          'div',
-          { 'class': 'col-md-4' },
+          ),
           (0, _hyperapp.h)(
             'div',
-            { 'class': 'box' },
+            { 'class': 'col-md-6' },
             (0, _hyperapp.h)(
-              'div',
-              { 'class': 'box-img' },
-              ' ',
-              (0, _hyperapp.h)(
-                'div',
-                { 'class': 'price-circle' },
-                '$25'
-              ),
-              ' '
+              'h6',
+              null,
+              'Phone:'
             ),
             (0, _hyperapp.h)(
-              'span',
+              'div',
               { 'class': 'title' },
-              'Super BBQ Grill No Smoke'
+              '416-555-5555'
+            ),
+            (0, _hyperapp.h)(
+              'h6',
+              null,
+              'Lunch Service:'
             ),
             (0, _hyperapp.h)(
               'p',
-              { 'class': 'details' },
-              'Fried eggs, Steak, Potatoes, or French Fries, side of vegetables'
-            )
-          )
-        ),
-        (0, _hyperapp.h)(
-          'div',
-          { 'class': 'col-md-4' },
-          (0, _hyperapp.h)(
-            'div',
-            { 'class': 'box' },
-            (0, _hyperapp.h)(
-              'div',
-              { 'class': 'box-img' },
-              ' ',
-              (0, _hyperapp.h)(
-                'div',
-                { 'class': 'price-circle' },
-                '$25'
-              ),
-              ' '
+              null,
+              'Friday, Saturday, Sunday ',
+              (0, _hyperapp.h)('br', null),
+              'from 12pm - 1:30pm'
             ),
             (0, _hyperapp.h)(
-              'span',
-              { 'class': 'title' },
-              'Super BBQ Grill No Smoke'
+              'h6',
+              null,
+              'Dinner Service:'
             ),
             (0, _hyperapp.h)(
               'p',
-              { 'class': 'details' },
-              'Fried eggs, Steak, Potatoes, or French Fries, side of vegetables'
+              null,
+              'Daily ',
+              (0, _hyperapp.h)('br', null),
+              '6pm - 9:30pm'
             )
           )
         )
-      ),
-      (0, _hyperapp.h)(
-        'a',
-        { href: '#', 'class': 'link' },
-        'View Full Menu'
       )
     )
   );
