@@ -40,25 +40,33 @@ exports.default = App;
 
 var _hyperapp = __webpack_require__(0);
 
-var _Header = __webpack_require__(4);
+var _Header = __webpack_require__(5);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TopImg = __webpack_require__(8);
+var _TopImg = __webpack_require__(10);
 
 var _TopImg2 = _interopRequireDefault(_TopImg);
 
-var _OurStory = __webpack_require__(5);
+var _OurStory = __webpack_require__(6);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
-var _SpecialMenu = __webpack_require__(7);
+var _SpecialMenu = __webpack_require__(9);
 
 var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
 
-var _RandomQuote = __webpack_require__(6);
+var _RandomQuote = __webpack_require__(7);
 
 var _RandomQuote2 = _interopRequireDefault(_RandomQuote);
+
+var _ContactUs = __webpack_require__(4);
+
+var _ContactUs2 = _interopRequireDefault(_ContactUs);
+
+var _Reviews = __webpack_require__(8);
+
+var _Reviews2 = _interopRequireDefault(_Reviews);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -73,7 +81,8 @@ function App(_ref) {
     (0, _hyperapp.h)(_TopImg2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_Reviews2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -95,6 +104,140 @@ var globalState = exports.globalState = {
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = ContactUs;
+
+var _hyperapp = __webpack_require__(0);
+
+function ContactUs(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    'section',
+    { id: 'ContactUs', 'class': 'texturebg' },
+    (0, _hyperapp.h)(
+      'div',
+      { 'class': 'container' },
+      (0, _hyperapp.h)(
+        'h5',
+        { 'class': 'comp-title' },
+        'Special Menu'
+      ),
+      (0, _hyperapp.h)(
+        'h2',
+        null,
+        'Delicious Flavour of Autumn'
+      ),
+      (0, _hyperapp.h)(
+        'div',
+        { 'class': 'row boxes' },
+        (0, _hyperapp.h)(
+          'div',
+          { 'class': 'col-md-4' },
+          (0, _hyperapp.h)(
+            'div',
+            { 'class': 'box' },
+            (0, _hyperapp.h)(
+              'div',
+              { 'class': 'box-img' },
+              ' ',
+              (0, _hyperapp.h)(
+                'div',
+                { 'class': 'price-circle' },
+                '$25'
+              ),
+              ' '
+            ),
+            (0, _hyperapp.h)(
+              'span',
+              { 'class': 'title' },
+              'Super BBQ Grill No Smoke'
+            ),
+            (0, _hyperapp.h)(
+              'p',
+              { 'class': 'details' },
+              'Fried eggs, Steak, Potatoes, or French Fries, side of vegetables'
+            )
+          )
+        ),
+        (0, _hyperapp.h)(
+          'div',
+          { 'class': 'col-md-4' },
+          (0, _hyperapp.h)(
+            'div',
+            { 'class': 'box' },
+            (0, _hyperapp.h)(
+              'div',
+              { 'class': 'box-img' },
+              ' ',
+              (0, _hyperapp.h)(
+                'div',
+                { 'class': 'price-circle' },
+                '$25'
+              ),
+              ' '
+            ),
+            (0, _hyperapp.h)(
+              'span',
+              { 'class': 'title' },
+              'Super BBQ Grill No Smoke'
+            ),
+            (0, _hyperapp.h)(
+              'p',
+              { 'class': 'details' },
+              'Fried eggs, Steak, Potatoes, or French Fries, side of vegetables'
+            )
+          )
+        ),
+        (0, _hyperapp.h)(
+          'div',
+          { 'class': 'col-md-4' },
+          (0, _hyperapp.h)(
+            'div',
+            { 'class': 'box' },
+            (0, _hyperapp.h)(
+              'div',
+              { 'class': 'box-img' },
+              ' ',
+              (0, _hyperapp.h)(
+                'div',
+                { 'class': 'price-circle' },
+                '$25'
+              ),
+              ' '
+            ),
+            (0, _hyperapp.h)(
+              'span',
+              { 'class': 'title' },
+              'Super BBQ Grill No Smoke'
+            ),
+            (0, _hyperapp.h)(
+              'p',
+              { 'class': 'details' },
+              'Fried eggs, Steak, Potatoes, or French Fries, side of vegetables'
+            )
+          )
+        )
+      ),
+      (0, _hyperapp.h)(
+        'a',
+        { href: '#', 'class': 'link' },
+        'View Full Menu'
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -156,7 +299,7 @@ function Header(_ref) {
 }
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -228,7 +371,7 @@ function OurStory(_ref) {
 }
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -271,7 +414,93 @@ function RandomQuote(_ref) {
 }
 
 /***/ }),
-/* 7 */
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Reviews;
+
+var _hyperapp = __webpack_require__(0);
+
+function Reviews(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    'section',
+    { id: 'Reviews' },
+    (0, _hyperapp.h)(
+      'div',
+      { 'class': 'container' },
+      (0, _hyperapp.h)(
+        'div',
+        { 'class': 'row' },
+        (0, _hyperapp.h)(
+          'div',
+          { 'class': 'col-md-8' },
+          (0, _hyperapp.h)(
+            'div',
+            { 'class': 'side-img' },
+            (0, _hyperapp.h)('img', { src: 'http://cdn.playbuzz.com/cdn/76d5533e-7e04-48ca-973e-8e05c34428ca/61a58a6a-7780-41d5-ac94-77891e70c103.jpg' })
+          )
+        ),
+        (0, _hyperapp.h)(
+          'div',
+          { 'class': 'col-md-4' },
+          (0, _hyperapp.h)(
+            'h5',
+            { 'class': 'comp-title' },
+            'Reviews'
+          ),
+          (0, _hyperapp.h)(
+            'h2',
+            null,
+            'The Food Network'
+          ),
+          (0, _hyperapp.h)(
+            'h4',
+            null,
+            '"Best Restaurant in the City"'
+          ),
+          (0, _hyperapp.h)(
+            'p',
+            null,
+            'I went to this restaurant and instantly fell in love with the food. The food was flavourful and the service was top notch'
+          ),
+          (0, _hyperapp.h)(
+            'div',
+            { 'class': 'author' },
+            (0, _hyperapp.h)(
+              'strong',
+              null,
+              'Joe Bastiachi -'
+            ),
+            ' ',
+            (0, _hyperapp.h)(
+              'em',
+              null,
+              'Winner of Master Chef'
+            )
+          ),
+          (0, _hyperapp.h)(
+            'div',
+            { 'class': 'arrows' },
+            (0, _hyperapp.h)('i', { 'class': 'fa fa-arrow-left', 'aria-hidden': 'true' }),
+            (0, _hyperapp.h)('i', { 'class': 'fa fa-arrow-right ready', 'aria-hidden': 'true' })
+          )
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -405,7 +634,7 @@ function SpecialMenu(_ref) {
 }
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -484,7 +713,7 @@ function TopImg(_ref) {
 }
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -526,4 +755,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[9]);
+],[11]);

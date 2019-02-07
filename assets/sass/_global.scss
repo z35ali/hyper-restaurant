@@ -19,18 +19,25 @@ h2 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color: $paragraphColor;
-  line-height: 1.8;
+  line-height: 2;
   margin: 0.5rem 0 3rem;
   font-weight: 300;
 }
 
+strong {
+  font-weight: 600;
+}
 a {
   transition: all 0.5s ease-in-out;
   &:hover {
     color: $red;
   }
+}
+
+em {
+  font-style: italic;
 }
 
 .texturebg {
