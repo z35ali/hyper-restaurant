@@ -45,8 +45,6 @@
     "start": "gulp",
     "sass": "gulp styles",
     "js": "gulp webpack"
-    
-}
   },
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
