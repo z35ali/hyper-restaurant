@@ -104,8 +104,14 @@ function App(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var companyInfo = {
+  title: 'PRIME STEAK RESTAURANT',
+  phone: '(642)-555-5555',
+  location: 'Toronto, Ontario'
+};
 var globalState = exports.globalState = {
-  count: 0
+  count: 0,
+  companyInfo: companyInfo
 };
 
 /***/ }),
@@ -155,7 +161,7 @@ function ContactUs(_ref) {
               'div',
               { 'class': 'title' },
               (0, _hyperapp.h)('br', null),
-              'Toronto, Ontario'
+              state.companyInfo.location
             ),
             (0, _hyperapp.h)(
               'h6',
@@ -191,7 +197,7 @@ function ContactUs(_ref) {
             (0, _hyperapp.h)(
               'div',
               { 'class': 'title' },
-              '416-555-5555'
+              state.companyInfo.phone
             ),
             (0, _hyperapp.h)(
               'h6',
@@ -346,27 +352,22 @@ function Header(_ref) {
         null,
         (0, _hyperapp.h)(
           'a',
-          { href: '#' },
+          { href: '#OurStory' },
           'Our Story'
         ),
         (0, _hyperapp.h)(
           'a',
-          { href: '#' },
-          'Reviews'
-        ),
-        (0, _hyperapp.h)(
-          'a',
-          { href: '#' },
+          { href: '#SpecialMenu' },
           'Special Menu'
         ),
         (0, _hyperapp.h)(
           'a',
-          { href: '#' },
-          'Reservations'
+          { href: '#Reviews' },
+          'Reviews'
         ),
         (0, _hyperapp.h)(
           'a',
-          { href: '#' },
+          { href: '#ContactUs' },
           'Contact Us'
         )
       )
@@ -744,9 +745,7 @@ function TopImg(_ref) {
         (0, _hyperapp.h)(
           'h1',
           null,
-          'Prime Steak ',
-          (0, _hyperapp.h)('br', null),
-          'Restaurant'
+          state.companyInfo.title
         )
       ),
       (0, _hyperapp.h)(
@@ -763,7 +762,7 @@ function TopImg(_ref) {
           (0, _hyperapp.h)(
             'h2',
             null,
-            '(642)-555-5555'
+            state.companyInfo.phone
           ),
           (0, _hyperapp.h)(
             'div',
@@ -808,7 +807,7 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _hyperapp.app)({
-  state: { globalState: _globalState.globalState },
+  state: _globalState.globalState,
   view: function view(state, actions) {
     return (0, _hyperapp.h)(_App2.default, { state: state, actions: actions });
   },

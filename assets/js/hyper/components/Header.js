@@ -5,11 +5,11 @@ export default function Header({ state, actions }) {
     <header>
       <div class='container'>
         <nav>
-          <a href='#'>Our Story</a>
-          <a href='#'>Reviews</a>
-          <a href='#'>Special Menu</a>
-          <a href='#'>Reservations</a>
-          <a href='#'>Contact Us</a>
+          <a href='#OurStory'>Our Story</a>
+          <a href='#SpecialMenu'>Special Menu</a>
+          <a href='#Reviews'>Reviews</a>
+          {/* <a href='#'>Reservations</a> */}
+          <a href='#ContactUs'>Contact Us</a>
         </nav>
       </div>
     </header>

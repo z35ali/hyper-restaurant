@@ -12,7 +12,7 @@ export default function ContactUs({ state, actions }) {
             <div class='col-md-6'>
               <div class='title'>
                 <br />
-                Toronto, Ontario
+                {state.companyInfo.location}
               </div>
               <h6 class='Address'>
                 555 Toronto Street <br />
@@ -27,7 +27,7 @@ export default function ContactUs({ state, actions }) {
 
             <div class='col-md-6 service'>
               <h6>Phone:</h6>
-              <div class='title'>416-555-5555</div>
+              <div class='title'>{state.companyInfo.phone}</div>
               <h6>Lunch Service:</h6>
               <p>
                 Friday, Saturday, Sunday <br />
