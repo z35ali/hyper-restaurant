@@ -11,9 +11,9 @@ var exec = require('child_process').exec;
 var deploy = require('gulp-gh-pages');
 
   gulp.task('deploy', function () {
-    return gulp.src("./prod/**/*")
+    return gulp.src("*")
       .pipe(deploy({ 
-        remoteUrl: "https://github.com/z35ali/hyper-restaurant.github.io.git",
+        remoteUrl: "https://github.com/z35ali/hyper-restaurant.git",
         branch: "master"
       }))
   });
